@@ -139,6 +139,7 @@ settingsApplied = False
 oledWriter('', '', '')
 with open("/settings.dat", "r") as settingsFile:
     savedModes = settingsFile.read().split(',')
+settingsFile.close()
 
 while settingsApplied is False:
     if savedModes[0] == "Comfort" or savedModes[0] == "Eco":
